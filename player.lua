@@ -228,7 +228,7 @@ function CreateExtendedPlayer(playerId, identifier, group, accounts, inventory, 
     end
 
     function self.addAccountMoney(accountName, money, reason)
-        print('addAccountMoney', accountName, money, reason)
+
         reason = reason or "Unknown"
         if not tonumber(money) then
             print(("[^1ERROR^7] Tried To Set Account ^5%s^0 For Player ^5%s^0 To An Invalid Number -> ^5%s^7"):format(
@@ -260,7 +260,6 @@ function CreateExtendedPlayer(playerId, identifier, group, accounts, inventory, 
     end
 
     function self.removeAccountMoney(accountName, money, reason)
-        print('removeAccountMoney', accountName, money, reason)
         reason = reason or "Unknown"
         if not tonumber(money) then
             print(("[^1ERROR^7] Tried To Set Account ^5%s^0 For Player ^5%s^0 To An Invalid Number -> ^5%s^7"):format(
